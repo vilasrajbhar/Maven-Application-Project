@@ -6,17 +6,16 @@ import org.apache.logging.log4j.Logger;
 
 public class App
 {
-    public App() {
-    }
+    private static Logger logger = LogManager.getLogger(App.class);
+
     public static void main( String[] args )
     {
-        Logger logger = LogManager.getLogger(App.class);
         App app = new App();
         logger.info( "Hello World!" );
-        logger.info(app.ProjectDesc());
+        logger.info(app);
     }
 
-    public String ProjectDesc() {
+    public String project_desc() {
         String S1 = "This is Maven Projects";
         return S1;
     }

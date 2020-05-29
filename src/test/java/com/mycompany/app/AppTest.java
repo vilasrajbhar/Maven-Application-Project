@@ -1,5 +1,4 @@
 package com.mycompany.app;
-
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -12,6 +11,7 @@ public class AppTest
     {
         App tester = new App();
         String S1 = "This is Maven Projects";
-        Assert.assertEquals(S1, tester.ProjectDesc());
+        Assert.assertEquals(S1, tester.project_desc());
     }
+
 }
