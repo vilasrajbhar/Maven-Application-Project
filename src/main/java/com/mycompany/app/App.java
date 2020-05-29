@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 public class App
 {
     private static Logger logger = LogManager.getLogger(App.class);
+    public static String stext = "This is Maven Projects";
 
     public static void main( String[] args )
     {
@@ -16,7 +17,7 @@ public class App
     }
 
     public String project_desc(){
-        return "This is Maven Projects";
+        return stext;
     }
 
 }
