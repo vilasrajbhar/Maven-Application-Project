@@ -11,7 +11,7 @@ public class AppTest
     public void AppTestImp()
     {
         App tester = new App();
-        Assert.assertEquals(NEWVARIABLE_1, tester.project_Desc());
+        Assert.assertEquals(NEWVARIABLE_1, tester.projectDesc());
     }
 
 }
