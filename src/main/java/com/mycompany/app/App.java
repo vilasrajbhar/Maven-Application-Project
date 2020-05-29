@@ -1,10 +1,23 @@
 package com.mycompany.app;
 
-public class App 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+
+public class App
 {
+    public App() {
+    }
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
-        System.out.println( "This is Maven Projects" );
+        Logger logger = LogManager.getLogger(App.class);
+        App app = new App();
+        logger.info( "Hello World!" );
+        logger.info(app.ProjectDesc());
+    }
+
+    public String ProjectDesc() {
+        String S1 = "This is Maven Projects";
+        return S1;
     }
 }

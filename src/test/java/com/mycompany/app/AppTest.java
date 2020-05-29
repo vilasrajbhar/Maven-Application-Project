@@ -1,14 +1,17 @@
 package com.mycompany.app;
 
-import static org.junit.Assert.assertTrue;
-
+import org.junit.Assert;
 import org.junit.Test;
 
 public class AppTest 
 {
+    public AppTest() {
+    }
     @Test
-    public void shouldAnswerWithTrue()
+    public void AppTestImp()
     {
-        assertTrue( true );
+        App tester = new App();
+        String S1 = "This is Maven Projects";
+        Assert.assertEquals(S1, tester.ProjectDesc());
     }
 }
