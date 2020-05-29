@@ -15,8 +15,8 @@ public class App
         logger.info(app);
     }
 
-    public String project_desc() {
-        String S1 = "This is Maven Projects";
-        return S1;
+    public String project_desc(){
+        return "This is Maven Projects";
     }
+
 }

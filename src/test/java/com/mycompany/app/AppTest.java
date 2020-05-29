@@ -10,8 +10,8 @@ public class AppTest
     public void AppTestImp()
     {
         App tester = new App();
-        String S1 = "This is Maven Projects";
-        Assert.assertEquals(S1, tester.project_desc());
+        String stext = "This is Maven Projects";
+        Assert.assertEquals(stext, tester.project_desc());
     }
 
 }
