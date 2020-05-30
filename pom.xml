@@ -5,10 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.mycompany.app</groupId>
-  <artifactId>my-app</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <artifactId>maven-project</artifactId>
+  <version>1.0.snapshot</version>
+  <packaging>war</packaging>
 
-  <name>my-app</name>
+  <name>maven-project</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
