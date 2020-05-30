@@ -49,17 +49,10 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-	    <properties>
-
+			<properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <sonar.host.url> http://localhost:9000 </sonar.host.url>
-		<sonar.host.url> http://localhost:9000 </sonar.host.url>
-
- 		<!--  <sonar.jdbc.url>your database URL</sonar.jdbc.url>
-		<sonar.jdbc.driver>Your database driver</sonar.jdbc.driver>
-		<sonar.jdbc.username>DB username</sonar.jdbc.username>
-		<sonar.jdbc.password>db password</sonar.jdbc.password>        -->  
-               
+				<sonar.host.url> http://localhost:9000 </sonar.host.url>
             </properties>
         </profile>
      </profiles>
@@ -105,21 +98,20 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
-	<plugin>
-    <		artifactId>maven-war-plugin</artifactId>
+		<plugin>
+			<artifactId>maven-war-plugin</artifactId>
     		<configuration>
         	<attachClasses>true</attachClasses>
         	<webXml>target/web.xml</webXml>
-		<webResources>
-		    <resource>
-			<directory>src/main/webapp</directory>
-			<filtering>true</filtering>
-		    </resource>
-		</webResources>
+			<webResources>
+				<resource>
+				<directory>src/main/webapp</directory>
+				<filtering>true</filtering>
+				</resource>
+			</webResources>
     		</configuration>
-	</plugin>
-	      
-	<plugin>
+		</plugin>   
+		<plugin>
       		<groupId>org.sonarsource.scanner.maven</groupId>
       		<artifactId>sonar-maven-plugin</artifactId>
       		<version>3.5.0.1254</version>
@@ -133,25 +125,25 @@
       		</executions>
     	</plugin>
 		
-	<plugin>
-		<groupId>org.jacoco</groupId>
-          	<artifactId>jacoco-maven-plugin</artifactId>
-          	<version>0.8.5</version>
-		<executions>
-                    <execution>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>generate-code-coverage-report</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
-        </plugin>
+		<plugin>
+			<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.5</version>
+			<executions>
+				<execution>
+					<goals>
+						<goal>prepare-agent</goal>
+					</goals>
+				</execution>
+				<execution>
+					<id>generate-code-coverage-report</id>
+					<phase>test</phase>
+					<goals>
+						<goal>report</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>
       </plugins>
     </pluginManagement>
  

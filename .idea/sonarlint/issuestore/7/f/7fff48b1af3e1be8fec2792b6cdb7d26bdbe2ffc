@@ -1,9 +1,0 @@
-
-£
-java:S1186	"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÑëËÿÿÿÿÿ8îõûµ¥.
-G
-java:S2629"%Invoke method(s) only conditionally. (¹æ®üÿÿÿÿ8©æ·¥.
-|
-java:S1488"ZImmediately return this expression instead of assigning it to the temporary variable "S1".(˜ëş€ûÿÿÿÿ8ß§ç´¥.
-k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ëş€ûÿÿÿÿ
-o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñİıÿÿÿÿ8ß§ç´¥.
