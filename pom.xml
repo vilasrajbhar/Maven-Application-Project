@@ -7,6 +7,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>maven-project</artifactId>
   <version>1.0.snapshot</version>
+  <packaging>war</packaging>
 
   <name>maven-project</name>
   <!-- FIXME change it to the project's website -->
@@ -97,20 +98,29 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+		<!-- <plugin> -->
+			<!-- <artifactId>maven-war-plugin</artifactId> -->
+    		<!-- <configuration> -->
+        	<!-- <attachClasses>true</attachClasses> -->
+        	<!-- <webXml>target/web.xml</webXml> -->
+			<!-- <failOnMissingWebXml>false</failOnMissingWebXml> -->
+			<!-- <webResources> -->
+				<!-- <resource> -->
+				<!-- <directory>src/main/webapp</directory> -->
+				<!-- <filtering>true</filtering> -->
+				<!-- </resource> -->
+			<!-- </webResources> -->
+    		<!-- </configuration> -->
+		<!-- </plugin>    -->
+		
 		<plugin>
-			<artifactId>maven-war-plugin</artifactId>
-    		<configuration>
-        	<attachClasses>true</attachClasses>
-        	<webXml>target/web.xml</webXml>
-			<failOnMissingWebXml>false</failOnMissingWebXml>
-			<webResources>
-				<resource>
-				<directory>src/main/webapp</directory>
-				<filtering>true</filtering>
-				</resource>
-			</webResources>
-    		</configuration>
-		</plugin>   
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-war-plugin</artifactId>
+			  <version>3.2.3</version>
+			  <configuration>
+				<failOnMissingWebXml>false</failOnMissingWebXml>
+			  </configuration>
+		</plugin>
 		<plugin>
       		<groupId>org.sonarsource.scanner.maven</groupId>
       		<artifactId>sonar-maven-plugin</artifactId>
