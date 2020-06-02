@@ -53,6 +53,11 @@
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <!--<sonar.host.url> http://localhost:9000 </sonar.host.url>
 		<sonar.host.url> http://localhost:9000 </sonar.host.url>-->
+		<sonar.projectKey>maven-project</sonar.projectKey>
+	        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        	<sonar.organization>vilasrajbhar</sonar.organization>
+        	<sonar.login>012d8833e723b5829730442c4abe7b209c73a3e3</sonar.login>
+
             </properties>
         </profile>
      </profiles>
@@ -142,11 +147,12 @@
       </plugins>
     </pluginManagement>
  
-    <plugins>
+<!--    <plugins>
       <plugin>
         <groupId>org.sonarsource.scanner.maven</groupId>
         <artifactId>sonar-maven-plugin</artifactId>
       </plugin>
-    </plugins>
+    </plugins> -->
+	  
   </build>
 </project>
